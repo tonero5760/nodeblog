@@ -1,6 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 
+
 const server = http.createServer((req, res) => {
   let path = "./views/";
   let statusCode = 200;
@@ -40,4 +41,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(5050, "localhost", () => {
   console.log("Server is listening on port 5050");
+	console.log("Still listening");
 });
