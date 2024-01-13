@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+<%- include("./partials/nav.ejs") %>
+    <div class="container">
+        <h1>New Blog</h1>
+
+        <div class="form">
+            <form action="/blogs"  method="post">
+                <input type="text" name="title" placeholder="title" id="">
+                <textarea name="body" id="" cols="30" rows="10" placeholder="Enter post..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>
